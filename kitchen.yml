@@ -110,25 +110,25 @@ platforms:
     verifier:
       inputs:
         saltmajorversion: 3006
- - name: rockylinux-8-3006-3-py3
+  - name: rockylinux-8-3006-3-py3
     driver:
       image: saltimages/salt-3006.3-py3:rockylinux-8
     verifier:
       inputs:
         saltmajorversion: 3006
- - name: fedora-38-3006-3-py3
+  - name: fedora-38-3006-3-py3
     driver:
       image: saltimages/salt-3006.3-py3:fedora-38
     verifier:
       inputs:
         saltmajorversion: 3006
- - name: fedora-37-3006-3-py3
+  - name: fedora-37-3006-3-py3
     driver:
       image: saltimages/salt-3006.3-py3:fedora-37
     verifier:
       inputs:
         saltmajorversion: 3006
- - name: fedora-36-3006-3-py3
+  - name: fedora-36-3006-3-py3
     driver:
       image: saltimages/salt-3006.3-py3:fedora-36
     verifier:
@@ -243,7 +243,7 @@ platforms:
     verifier:
       inputs:
         saltmajorversion: 3005
- - name: rockylinux-8-3005-3-py3
+  - name: rockylinux-8-3005-3-py3
     driver:
       image: saltimages/salt-3005.3-py3:rockylinux-8
     verifier:
