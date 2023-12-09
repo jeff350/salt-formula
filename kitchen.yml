@@ -21,6 +21,235 @@ provisioner:
     - test/salt/pillar
 
 platforms:
+  ## SALT 3006
+  - name: debian-11-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:debian-11
+      run_command: /lib/systemd/systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: debian-10-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:debian-10
+      run_command: /lib/systemd/systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: ubuntu-2204-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:ubuntu-22.04
+      run_command: /lib/systemd/systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: ubuntu-2004-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:ubuntu-20.04
+      run_command: /lib/systemd/systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: centos-stream9-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:centos-stream9
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: centos-stream8-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:centos-stream8
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: centos-7-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:centos-7
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: amazonlinux-2-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:amazonlinux-2
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: oraclelinux-9-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:oraclelinux-9
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: oraclelinux-8-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:oraclelinux-8
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: oraclelinux-7-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:oraclelinux-7
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: almalinux-9-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:almalinux-9
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: almalinux-8-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:almalinux-8
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: rockylinux-8-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:rockylinux-9
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+ - name: rockylinux-8-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:rockylinux-8
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+ - name: fedora-38-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:fedora-38
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+ - name: fedora-37-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:fedora-37
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+ - name: fedora-36-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:fedora-36
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: arch-base-latest-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:arch-base-latest
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: gentoo-stage3-latest-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:gentoo-stage3-latest
+      run_command: /sbin/init
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+  - name: gentoo-stage3-systemd-3006-3-py3
+    driver:
+      image: saltimages/salt-3006.3-py3:gentoo-stage3-systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3006
+
+   ## SALT 3005
+  - name: debian-11-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:debian-11
+      run_command: /lib/systemd/systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: debian-10-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:debian-10
+      run_command: /lib/systemd/systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: ubuntu-2204-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:ubuntu-22.04
+      run_command: /lib/systemd/systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: ubuntu-2004-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:ubuntu-20.04
+      run_command: /lib/systemd/systemd
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: centos-stream9-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:centos-stream9
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: centos-stream8-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:centos-stream8
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: centos-7-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:centos-7
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: amazonlinux-2-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:amazonlinux-2
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: oraclelinux-9-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:oraclelinux-9
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: oraclelinux-8-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:oraclelinux-8
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: oraclelinux-7-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:oraclelinux-7
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: almalinux-9-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:almalinux-9
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: almalinux-8-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:almalinux-8
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+  - name: rockylinux-8-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:rockylinux-9
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+ - name: rockylinux-8-3005-3-py3
+    driver:
+      image: saltimages/salt-3005.3-py3:rockylinux-8
+    verifier:
+      inputs:
+        saltmajorversion: 3005
+
   ## SALT `tiamat`
   - name: debian-11-tiamat-py3
     driver:
